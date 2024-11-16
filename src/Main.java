@@ -2,16 +2,27 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+      //ARRAY LIST OPERATIONS
+      MyArrayList array = new MyArrayList();
+      array.add(3);
+      array.print();
+      array.add(2);
+      array.add(6);
+      array.add(9);
+      array.print();
+      array.remove(1);
+      array.print();
+      System.out.println(array.get(0));
+      array.set(2,10);
+      array.print();
+      System.out.println(array.last());
+      System.out.println(array.first());
+      System.out.println(array.indexOf(6));
+      System.out.println(array.size());
+      array.add(2,11);
+      array.print();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
     }
 }
